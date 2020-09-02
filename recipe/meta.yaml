@@ -1,13 +1,13 @@
 {% set name = "welltestpy" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: c010a8755e8f10a64492a06d5bc4c8be2587aefc437663a60ca126148b84b9e7
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 6d84371b61a3ce2bb53c392a3e88905d2e56c53aa8b790df34480f3906484445
 
 build:
   noarch: python
@@ -40,11 +40,11 @@ test:
     - pytest -vv tests
 
 about:
-  home: "https://github.com/GeoStat-Framework/welltestpy"
+  home: https://github.com/GeoStat-Framework/welltestpy
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "welltestpy - package to handle well-based Field-campaigns."
+  summary: welltestpy - package to handle well-based Field-campaigns.
   doc_url: https://welltestpy.readthedocs.io/
   dev_url: https://github.com/GeoStat-Framework/welltestpy
 
