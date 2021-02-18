@@ -5,11 +5,13 @@ Home: https://github.com/GeoStat-Framework/welltestpy
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/welltestpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: welltestpy - package to handle well-based Field-campaigns.
 
+Development: https://github.com/GeoStat-Framework/welltestpy
 
+Documentation: https://welltestpy.readthedocs.io/
 
 Current build status
 ====================
