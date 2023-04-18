@@ -17,16 +17,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
-    - setuptools >=45
-    - setuptools_scm >=3.5
+    - python >=3.7
+    - hatchling >=1.8.0
+    - hatch-vcs
   run:
-    - python >=3.6
+    - python >=3.7
     - packaging >=20
-    - anaflow >=1.0.0, <2.0
-    - numpy >=1.14.5, <2.0
-    - scipy >=1.1.0, <2.0
-    - spotpy >=1.5.0, <2.0
+    - anaflow >=1.0.0
+    - numpy >=1.14.5
+    - scipy >=1.1.0
+    - spotpy >=1.5.0
     - matplotlib-base
 
 test:
