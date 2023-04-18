@@ -1,5 +1,5 @@
 {% set name = "welltestpy" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6e9d49d8716813bd123a25a742992ce8ed0222ed7e4fba7a3f4798a12e05a417
+  sha256: 2182ef49db042531c82319a66014819210d9886fd695b81e0b22196b314f8ced
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
