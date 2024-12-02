@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2182ef49db042531c82319a66014819210d9886fd695b81e0b22196b314f8ced
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - hatchling >=1.8.0
     - hatch-vcs
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - packaging >=20
     - anaflow >=1.0.0
     - numpy >=1.14.5
@@ -34,6 +34,7 @@ test:
     - welltestpy
   requires:
     - pytest
+    - python {{ python_min }}
   source_files:
     - tests
   commands:
